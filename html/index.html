@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agriculture Page</title>
+
+  <!-- Bootstrap & Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url('https://wallpaperplay.com/walls/full/d/2/f/58025.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      color: white;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      transition: 0.3s;
+    }
+
+    .topnav a:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .jumbotron {
+      background-color: rgba(255, 255, 255, 0.85);
+      margin-top: 30px;
+      padding: 40px;
+      color: #333;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #333;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="topnav">
+    <a href="/" class="active"><i class="fa fa-home"></i> Home</a>
+    <a href="/enternew" style="float: right;"><i class="fa fa-user-plus"></i> Register</a>
+    <a href="/userlogin" style="float: right;"><i class="fa fa-sign-in-alt"></i> Login</a>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="container text-center">
+    <div class="jumbotron animate__animated animate__fadeInDown">
+      <h1>Welcome to AgriScan</h1>
+      <p>Empowering Farmers with Technology</p>
+      <a href="/enternew" class="btn btn-success btn-lg">Get Started</a>
+    </div>
+
+  <!-- Info Sections -->
+<div class="container mt-4">
+  <div class="row">
+
+    <!-- Left Box -->
+    <div class="col-sm-4 col-sm-offset-1">
+      <div class="section">
+        <h3><i class="fa fa-leaf"></i> Plant Disease Detection</h3>
+        <p>Upload leaf images and detect diseases instantly using AI.</p>
+      </div>
+    </div>
+
+    <!-- Right Box -->
+    <div class="col-sm-4 col-sm-offset-2">
+      <div class="section">
+        <h3><i class="fa fa-leaf"></i> Weed Detection</h3>
+        <p>Identify weeds before they affect your crops.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 AgriSmart | Email: info@agrismart.com</p>
+  </footer>
+
+</body>
+</html>

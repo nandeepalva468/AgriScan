@@ -69,8 +69,8 @@ def main():
             st.write(f"### Confidence: {confidence}%")
 
             # Send Telegram message
-            bot_token = "7852441374:AAEf2VpFsQ9Ln33eDIgFzUvkZ9YgE-rEiD8"  # Replace with your bot token
-            chat_id = "1329699944"           # Replace with your chat ID
+            bot_token = "Replace with your bot token"  
+            chat_id = "Replace with your chat ID"            
             message = f"Predicted Class: {predicted_class}\nConfidence: {confidence}%"
             send_telegram_message(bot_token, chat_id, message)
 
